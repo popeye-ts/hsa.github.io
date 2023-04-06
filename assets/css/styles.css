@@ -2,58 +2,59 @@ body{
     width: 100%;
     box-sizing: border-box;
 }
-.top-nav-container{
+
+/****************
+ GLOBAL STYLES
+ ****************/
+ .top-nav-container{
     display: flex;
     justify-content: space-between;
 }
-.hero-section{
-   background-image: url('../images/banner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 400px;
-    /* opacity: 0.5; */
-    position: relative;
+ul li a{
+    font-size: 13px;
 }
-.hero-section::after{
-    position: absolute;
-    content: "";
-    width: 100vw;
-    height: 400px;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-    top: 0;
-    left: 0;
+ .nav-link{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px 10px;
+ }
+ .nav-link:hover{
+    border-bottom: 2px solid gray;
+ }
+ .nav-contact{
+    font-size: 12px;
+ }
+a{
+    text-decoration: none;
+    color: black;
 }
-.hero-heading{
+li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
     font-family: 'Lora', serif;
-    font-size: 4rem;
-    width: 60%;
-    margin: auto;
-    text-align: left;
-    color: white;
-    padding: 50px;
-    z-index: 100;
-    position: absolute;
-    left: 20%;
-    overflow: hidden;
 }
-@media  (max-width: 760px){
-   .hero-heading{
-    font-size: 2rem;
-   }
+p{
+    font-size: 14px;
 }
 
-.work-info{
-    width: 70%;
-    margin: auto;
+
+
+
+
+
+
+
+
+@media (max-width:760px) {
+    p{
+        font-size: 12px;
+    }
 }
-.team-img{
-    width: 30%;
-    margin: auto;
-}
-.team-specialists{
-    display: flex;
-    justify-content: space-around;
-}
+
+
+
+
+
+/****************
+ GLOBAL STYLES
+ ****************/

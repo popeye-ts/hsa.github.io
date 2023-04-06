@@ -1,0 +1,96 @@
+
+
+.hero-section{
+   background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 400px;
+    /* opacity: 0.5; */
+    position: relative;
+}
+.hero-section::after{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 400px;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.hero-heading{
+    font-family: 'Lora', serif;
+    font-size: 4rem;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    color: white;
+    padding: 50px;
+    z-index: 100;
+    position: absolute;
+    left: 20%;
+    overflow: hidden;
+}
+.info-heading{
+    font-size: 3rem;
+}
+.work{
+    background-color: #ada9a4;
+}
+.work-info{
+    width: 70%;
+    margin: auto;
+}
+.card-desc{
+    height: 300px;
+}
+.work-heading, .work-desc{
+    color: white;
+}
+.team-img{
+    width: 30%;
+    /* margin: auto; */
+}
+.team-specialists{
+    display: flex;
+    justify-content: space-around;
+    background-color: #21264f;
+}
+.team-info{
+    color: white;
+    text-align: left;
+}
+.team-info a{
+    color: white;
+}
+.footer{
+    width: 60%;
+}
+
+
+@media (max-width:760px) {
+    .hero-section{
+        height: 250px;
+    }
+    .hero-section::after{
+        height: 250px;
+    }
+    .hero-heading{
+        font-size: 2rem;
+        width: 80%;
+        left: 0;
+    }
+    .info-row{
+        display: block;
+    }
+    .info-heading{
+        text-align: left;
+        font-size: 2rem;
+    }
+    .footer{
+        width: 90%;
+        font-size: 11px;
+    }
+}
