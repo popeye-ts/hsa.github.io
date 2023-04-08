@@ -14,8 +14,8 @@
      content: "";
      width: 100vw;
      height: 160px;
-     background-color: rgb(95, 95, 197);
-     opacity: 0.5;
+     background-color: #21264f;
+     opacity: 0.8;
      z-index: 1;
      top: 0;
      left: 0;
@@ -49,7 +49,7 @@
     border: none;
 }
 .card:hover{
-    border-bottom: 4px solid blueviolet;
+    border-bottom: 4px solid #1e1e1e;
     cursor: pointer;
 }
 /* ul li a:hover{
@@ -70,4 +70,8 @@
         width: 80%;
         left: 0;
     }
+}
+
+@media (min-width:700px) {
+
 }

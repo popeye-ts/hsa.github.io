@@ -55,6 +55,28 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-size: 13px;
 }
+.bredcrumb{
+    position: absolute;
+    z-index: 19;
+    bottom: -10%;
+    left: 25%;
+}
+.bredcrumb-two{
+    position: absolute;
+    z-index: 9;
+    /* top: 56%; */
+    left: 25%;
+    /* background-color: black; */
+}
+.bredcrumb a{
+    font-size: 15px;
+    color: #ada9a4;
+}
+.bredcrumb-two a{
+    color: #ada9a4;
+    font-size: 12px;
+    
+}
 .sm-nav-menu{
     background-color:blueviolet;
     /* width: 0px; */
@@ -98,6 +120,9 @@ p{
     .navbar-nav{
         text-align: right;
         margin-top: 25x px;
+    }
+    .bredcrumb, .bredcrumb-two{
+        bottom: -10%;
     }
     
 }
