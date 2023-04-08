@@ -12,7 +12,7 @@
      content: "";
      width: 100vw;
      height: 160px;
-     background-color: black;
+     background-color: rgb(95, 95, 197);
      opacity: 0.5;
      z-index: 1;
      top: 0;
@@ -31,6 +31,9 @@
      left: 20%;
      overflow: hidden;
  }
+ .work-intro-row{
+    display: flex;
+ }
 a{
     text-decoration: none;
     color: blue;
@@ -38,10 +41,11 @@ a{
 .work-detail{
     background-color: #ada9a4;
     width: 100%;
-    height: 500px;
-    padding: 60px;
+    /* height: 500px; */
+    /* padding: 60px; */
     /* text-align: center; */
 }
+
 .work-ul li{
     font-size: 13px;
     list-style-type: disc;
@@ -51,11 +55,9 @@ a{
     color: #ada9a4;
 }
 .work-row{
-    margin: 0px 100px;
+    display: flex;
+    justify-content: center;
 }
-
-
-
 
 .know-more{
     padding: 60px;
@@ -73,14 +75,17 @@ a{
 
  @media (max-width:760px) {
     .hero-section{
-        height: 250px;
+        height: 150px;
     }
     .hero-section::after{
-        height: 250px;
+        height: 150px;
     }
     .hero-heading{
         font-size: 2rem;
         width: 80%;
         left: 0;
     }
-}
+    .know-more-col-div h2{
+        font-size: 14px;
+    }
+ }

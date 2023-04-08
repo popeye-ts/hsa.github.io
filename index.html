@@ -21,40 +21,62 @@
 </head>
 
 <body>
+
+  <div class="sm-nav-menu">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="expertise.html">EXPERTISE</a></li>
+      <li><a href="team.html">OUR TEAM</a></li>
+      <li><a href="#">TRACK RECORD</a></li>
+      <li><a href="work.html">WORK AT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <button class="close">&times;</button>
+  </div>
   <div class="container-fluid top-nav-container p-2">
     <div class="logo">
-      <img src="assets/images/logo.PNG" alt="Logo">
+      <a href="index.html">
+        <img src="assets/images/logo.PNG" alt="Logo">
+      </a>
     </div>
     <div class="navBAr">
       <nav class="navbar navbar-expand-lg text-dark">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target=""
+          aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto pr-3">
             <li class="nav-item active">
-              <a class="nav-link" href="#">HOME</a>
+              <a class="nav-link" href="index.html">HOME</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">OUR EXPERTISE</a>
+              <a class="nav-link" href="expertise.html">OUR EXPERTISE</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">OUR TEAM</a>
+              <a class="nav-link" href="team.html">OUR TEAM</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#">TRACK RECORD</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">WORK AT</a>
+              <a class="nav-link" href="work.html">WORK AT</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="contact.html">CONTACT</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link nav-contact" href="#">info@hslaw.nl</a>
+              <ul class="nav-ul">
+                <li>
+                  <a class="nav-link nav-contact" href="#">info@hslaw.nl</a>
+                </li>
+              
+                <li>
+                  <a class="nav-link nav-contact" href="#">+31 (0)70 302 99 80</a>
+                </li>
+              </ul>
               <!-- <a class="nav-link nav-contact" href="#">+31 (0)70 302 99 80</a> -->
               <!-- <a class="nav-link" href="#">+31 (0)70 302 99 80</a> -->
             </li>
@@ -75,7 +97,7 @@
   <div class="container info mt-5">
     <div class="row info-row">
       <div class="col text-center">
-        <h2 class="info-heading">HSA Lawers</h2>
+        <h2 class="info-heading">HSA Lawyers</h2>
       </div>
       <div class="col text-left">
         <p>
@@ -99,16 +121,16 @@
     </div>
   </div>
 
-  <div class="container-fluid work p-5">
+  <div class="container-fluid work p-2">
     <div class="work-info">
-      <h2 class="work-heading">What We do</h2>
+      <h2 class="work-heading p-3">What We do</h2>
       <p class="work-desc mb-5">
         Offering the full scope of legal advice geared towards entrepreneurs, investors and management, HSA Lawyers advises and supports on (cross-border) mergers and acquisitions, fund formation, structuring of investments and company law. Our support includes (vendor) due diligence, drafting or assessing contracts, completing transactions, restructurings or joint ventures. We have an extensive (international) network of trusted advisers, enabling us to involve the right experts to deliver seamless solutions.
       </p>
     </div>
     <div class="container hsa-workers">
-      <div class="row mb-5">
-        <div class="col">
+      <div class="row">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <div class="card mb-5 hsa-card" style="width: 28rem;">
             <img class="card-img-top" src="assets/images/work-1.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -117,7 +139,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <div class="card mb-5 hsa-card" style="width: 28rem;">
             <img class="card-img-top" src="assets/images/private_equity.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -129,7 +151,7 @@
       </div>
 
       <div class="row mb-5">
-        <div class="col">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <div class="card mb-5 hsa-card " style="width: 28rem;">
             <img class="card-img-top" src="assets/images/venture_capital.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -138,7 +160,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <div class="card mb-5 hsa-card " style="width: 28rem;">
             <img class="card-img-top" src="assets/images/cooprative_law.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -149,7 +171,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col ">
+        <div class="col col-sm-12 col-md-6 col-lg-6 ">
           <div class="card mb-5 hsa-card " style="width: 28rem;">
             <img class="card-img-top" src="assets/images/commercial_contractingg.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -158,7 +180,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <div class="card mb-5 hsa-card " style="width: 28rem;">
             <img class="card-img-top" src="assets/images/cooprative_law.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -225,10 +247,11 @@
 </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 body{
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 /****************
@@ -11,6 +12,21 @@ body{
     justify-content: space-between;
     position: static;
     background-color: #fff;
+    position: sticky;
+    /* margin-bottom: 30px; */
+    z-index: 111;
+    top: 0;
+}
+.nav-toggle{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* margin-bottom: 40px; */
+}
+.nav-ul{
+    height: 30px;
+    line-height: 3px;
 }
 ul li a{
     font-size: 13px;
@@ -39,8 +55,35 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-size: 13px;
 }
+.sm-nav-menu{
+    background-color:blueviolet;
+    /* width: 0px; */
+    height: 100vh;
+    display: none;
+    transition: 0.2s ease-in;
+    position: fixed;
+    z-index: 555;
+    left: 0;
+    top: 0;
+}
 
-
+.sm-nav-menu  ul li{
+    font-family: 'Lora' , serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.sm-nav-menu ul li a{
+    color: white;
+}
+.close{
+    color: white;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    left: 350px;
+    position: absolute;
+}
 
 
 
@@ -52,6 +95,11 @@ p{
     p{
         font-size: 12px;
     }
+    .navbar-nav{
+        text-align: right;
+        margin-top: 25x px;
+    }
+    
 }
 
 

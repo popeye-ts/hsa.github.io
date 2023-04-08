@@ -22,16 +22,29 @@
 
 <body>
 
+  <div class="sm-nav-menu">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="expertise.html">EXPERTISE</a></li>
+      <li><a href="team.html">OUR TEAM</a></li>
+      <li><a href="#">TRACK RECORD</a></li>
+      <li><a href="work.html">WORK AT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <button class="close">&times;</button>
+  </div>
     <!-- header starts -->
     <div class="container-fluid top-nav-container p-2">
         <div class="logo">
+          <a href="index.html">
             <img src="assets/images/logo.PNG" alt="Logo">
+          </a>
         </div>
         <div class="navBAr">
             <nav class="navbar navbar-expand-lg text-dark">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                <button class="navbar-toggler nav-toggle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="" aria-controls="" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,27 +52,35 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto pr-3">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">HOME</a>
+                            <a class="nav-link" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">OUR EXPERTISE</a>
+                            <a class="nav-link" href="expertise.html">OUR EXPERTISE</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">OUR TEAM</a>
+                            <a class="nav-link" href="team.html">OUR TEAM</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#">TRACK RECORD</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">WORK AT</a>
+                            <a class="nav-link" href="work.html">WORK AT</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link nav-contact" href="#">info@hslaw.nl</a>
-                            <!-- <a class="nav-link nav-contact" href="#">+31 (0)70 302 99 80</a> -->
-                            <!-- <a class="nav-link" href="#">+31 (0)70 302 99 80</a> -->
+                          <ul class="nav-ul">
+                            <li>
+                              <a class="nav-link nav-contact" href="#">info@hslaw.nl</a>
+                            </li>
+                          
+                            <li>
+                              <a class="nav-link nav-contact" href="#">+31 (0)70 302 99 80</a>
+                            </li>
+                          </ul>
+                          <!-- <a class="nav-link nav-contact" href="#">+31 (0)70 302 99 80</a> -->
+                          <!-- <a class="nav-link" href="#">+31 (0)70 302 99 80</a> -->
                         </li>
                     </ul>
                 </div>
@@ -85,8 +106,8 @@
       </p>
     </div>
     <div class="container">
-      <div class="row mb-5">
-        <div class="col">
+      <div class="row mb-3">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <div class="card mb-5" style="width: 28rem;">
             <img class="card-img-top" src="assets/images/work-1.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -95,7 +116,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <div class="card mb-5 " style="width: 28rem;">
             <img class="card-img-top" src="assets/images/private_equity.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -106,8 +127,8 @@
         </div>
       </div>
 
-      <div class="row mb-5">
-        <div class="col">
+      <div class="row mb-3">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <div class="card mb-5 " style="width: 28rem;">
             <img class="card-img-top" src="assets/images/venture_capital.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -116,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <div class="card mb-5 " style="width: 28rem;">
             <img class="card-img-top" src="assets/images/cooprative_law.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -127,7 +148,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col ">
+        <div class="col col-sm-12 col-md-6 col-lg-6 ">
           <div class="card mb-5 " style="width: 28rem;">
             <img class="card-img-top" src="assets/images/commercial_contractingg.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -136,7 +157,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <div class="card mb-5 " style="width: 28rem;">
             <img class="card-img-top" src="assets/images/cooprative_law.jpg" alt="Card image cap">
             <div class="card-body card-desc">
@@ -205,6 +226,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
+        <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

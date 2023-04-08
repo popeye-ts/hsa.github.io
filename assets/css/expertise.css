@@ -13,7 +13,7 @@
      content: "";
      width: 100vw;
      height: 160px;
-     background-color: black;
+     background-color: rgb(95, 95, 197);
      opacity: 0.5;
      z-index: 1;
      top: 0;
@@ -35,10 +35,14 @@
 
  @media (max-width:760px) {
     .hero-section{
-        height: 250px;
+        height: 150px;
+        margin-bottom: 20px;
     }
     .hero-section::after{
-        height: 250px;
+        height: 150px;
+    }
+    .card{
+        width: 14rem;
     }
     .hero-heading{
         font-size: 2rem;
