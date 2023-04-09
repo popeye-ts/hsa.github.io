@@ -98,7 +98,7 @@ html, body{
         height: 200px;
     }
     .hero-heading{
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 100%;
         left: 0;
         line-height: 30px;
@@ -141,6 +141,9 @@ html, body{
     }
     .team-info a{
         font-size: 8px;
+    }
+    .hsa-card{
+        height: 500px;
     }
     /* .hsa-workers{
         width: 10rem;
