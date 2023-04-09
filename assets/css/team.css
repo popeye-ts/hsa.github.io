@@ -1,4 +1,6 @@
-
+body{
+    width: 100vw;
+}
 
 .hero-section{
     background-image: url('../images/banner.jpg');
@@ -35,18 +37,26 @@
  }
 .team{
     background-color: #e4e6ef;
+    /* padding: ; */
 }
-.team-members{
-    display: flex;
-    justify-content: space-evenly;
+.team-card{
+    width: 25rem;
+}
+.team-row{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* justify-content: space-evenly; */
+    padding: 20px;
     
 }
 .team-row{
     margin: auto;
+    width: 100%;
 }
 
 .card{
     border: none;
+    /* width: 28rem; */
 }
 .card:hover{
     border-bottom: 4px solid #1e1e1e;
@@ -57,21 +67,31 @@
 /* } */ 
 
 
-
-@media (max-width:760px) {
+@media screen and (max-width: 425px) {
+    .hero-heading{
+        font-size: 35px;
+        left: 0;
+    }
     .hero-section{
-        height: 250px;
+        height: 130px;
     }
     .hero-section::after{
-        height: 250px;
+        height: 130px;
     }
-    .hero-heading{
-        font-size: 2rem;
-        width: 80%;
-        left: 0;
+    .team-card{
+        width: 15rem;
+        display: block;
+    }
+    .team-row{
+        display: block;
+    }
+    .footer .row{
+       display: block;
     }
 }
 
-@media (min-width:700px) {
-
+@media screen and (max-width: 768px) {
+    .team-card{
+        width: 18rem;
+    }
 }

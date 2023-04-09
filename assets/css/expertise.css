@@ -103,6 +103,9 @@
     .expertise-col{
         width: 20rem !important;
     }
+    .work-info{
+        display: block;
+    }
     .bredcrumb-two{
         bottom: 240px;
     }

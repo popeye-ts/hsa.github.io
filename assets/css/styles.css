@@ -121,8 +121,15 @@ p{
         text-align: right;
         margin-top: 25x px;
     }
-    .bredcrumb, .bredcrumb-two{
+    .bredcrumb{
         bottom: -10%;
+    }
+    .bredcrumb-two{
+        position: absolute;
+        z-index: 9;
+        top: 56%;
+        left: 25%;
+        /* background-color: black; */
     }
     
 }
