@@ -31,7 +31,9 @@
      left: 20%;
      overflow: hidden;
  }
-
+.contact-info{
+    padding: 10px;
+}
 
 
 
@@ -64,5 +66,8 @@
     .map iframe{
         width: 300px;
         height: 300px;
+    }
+    .contact-bottom-row{
+        display: block;
     }
 }
