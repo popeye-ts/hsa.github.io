@@ -78,6 +78,12 @@
         width: 80%;
         left: 0;
     }
+    .bredcrumb-two{
+        top: 62%;
+    }
+    .work-info{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width : 1215px) and (min-width : 907px) {
@@ -89,9 +95,10 @@
         /* margin: auto; */
     }
 }
-@media screen and (max-width : 907px) and (min-width : 768px) {
+@media screen and (max-width : 768px) {
     .expertise-new-row{
-        width: 100%;
+        width: 80%;
+        margin: auto !important;
     }
     .expertise-col{
         width: 20rem !important;
