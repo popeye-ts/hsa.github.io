@@ -70,4 +70,9 @@
     .contact-bottom-row{
         display: block;
     }
+    .buttons{
+        justify-content: center;
+     }
+   
 }
+

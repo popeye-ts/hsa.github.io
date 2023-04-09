@@ -127,10 +127,11 @@ p{
     .bredcrumb-two{
         position: absolute;
         z-index: 9;
-        top: 56%;
+        top: 67%;
         left: 25%;
         /* background-color: black; */
     }
+    
     
 }
 
