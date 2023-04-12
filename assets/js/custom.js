@@ -30,9 +30,9 @@ $(document).ready(function(){
     });
   });
 
-  var mobileSlider = document.querySelector(".slider-mobile");
-  function slideDisplay(){
-    if(window.width < 768){
-        mobileSlider.style.display = 'block'
-    }
-  }
+//   var mobileSlider = document.querySelector(".slider-mobile");
+//   function slideDisplay(){
+//     if(window.width < 768){
+//         mobileSlider.style.display = 'block'
+//     }
+//   }

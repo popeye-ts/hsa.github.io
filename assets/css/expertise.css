@@ -65,6 +65,9 @@
     .expertise-new-row .col{
         width: 20rem;
     }
+    .slider-mobile div .col .card{
+        width: 16rem;
+    }
     .hero-section{
         height: 150px;
         margin-bottom: 20px;
