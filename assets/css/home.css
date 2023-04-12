@@ -3,14 +3,25 @@ html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
-
+a:hover{
+    text-decoration: underline;
+}
+.nav-link{
+    color:#21264f;
+    font-size: .875rem;
+}
+.nav-link:hover{
+    text-decoration: none;
+}
 .hero-section{
    background-image: url('../images/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 500px;
+    margin-top: 50px;
     /* opacity: 0.5; */
     position: relative;
 }
@@ -18,12 +29,13 @@ html, body{
     position: absolute;
     content: "";
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color: #21264f;
      opacity: 0.8;
     z-index: 1;
     top: 0;
     left: 0;
+    /* margin-top: 50px; */
 }
 .hero-heading{
     font-family: 'Lora', serif;
@@ -35,39 +47,68 @@ html, body{
     padding: 50px;
     z-index: 100;
     position: absolute;
-    left: 20%;
+    left: 14%;
+    /* margin-top: 50px; */
     /* overflow: hidden; */
 }
 .info-heading{
-    font-size: 3rem;
+    font-size: 2.25rem;
+}
+.info-text{
+    line-height: 1.5rem;
+    font-family: sans-serif;
+    margin-right: 90px;
 }
 .work{
     background-color: #ada9a4;
     width: 100%;
 }
 .work-info{
-    width: 70%;
-    margin: auto;
+    width: 67%;
+    margin: 80px auto;
 }
 
 .card-desc{
     height: 300px;
+    padding: 15px;
+}
+.work-desc{
+    line-height: 1.5rem;
 }
 .work-heading, .work-desc{
     color: white;
+}
+/* .slider-mobile{
+    display: none;
+} */
+.slider-mobile div{
+    margin: auto;
+}
+.hsa-workers-row{
+    margin: auto;
+    justify-content: center;
 }
 .team-img{
     width: 30%;
     /* margin: auto; */
 }
+.card-text{
+    line-height: 1.5rem;
+}
+
 .team-specialists{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #21264f;
+}
+.team-specialists-heading{
+    color: white;
 }
 .team-info{
     color: white;
     text-align: left;
+    flex-basis: 30%;
+    margin-left: 150px;
 }
 .team-info a{
     color: white;
@@ -81,6 +122,11 @@ html, body{
         font-size: 2.5rem;
     }
 }
+@media (min-width: 768px) {
+    .slider-mobile {
+      display: none;
+    }
+  }
 @media screen and (max-width:760px) {
     body{
         width: 100vw;
@@ -93,6 +139,12 @@ html, body{
     }
     .hero-section{
         height: 200px;
+    }
+    .hsa-workers{
+        display: none;
+    }
+    .hsa-card{
+        width: 90%;
     }
     .hero-section::after{
         height: 200px;
@@ -108,7 +160,7 @@ html, body{
         /* padding: 20px; */
     }
     p{
-        font-size: 10px;
+        font-size: .875rem;
     }
     
     .info-row{
@@ -118,7 +170,15 @@ html, body{
     }
     .info-heading{
         text-align: left;
-        font-size: 1rem;
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    .info-heading-col{
+        width: 50%;
+    }
+    .info{
+        padding: 15px 0px;
+        width: 90%;
     }
     /* .work{
         width: 180vw;
@@ -126,11 +186,16 @@ html, body{
     .work-info{
         width: 100%;
         overflow: hidden;
-        margin: auto;
+        margin: 65px auto;
+        padding: 0px 15px;
+    }
+    .hsa-workers-row{
+        display: block;
     }
     .team-info{
         width: 100% !important;
-        margin-top: 15px;
+        /* margin-top: 15px; */
+        margin: 0;
     }
     .team-img{
         width: 90%;
@@ -145,6 +210,7 @@ html, body{
     .hsa-card{
         height: 500px;
     }
+   
     /* .hsa-workers{
         width: 10rem;
     } */

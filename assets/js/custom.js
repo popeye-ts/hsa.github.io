@@ -16,3 +16,23 @@ const closeNavMenu = () => {
     smNav.style.display = 'none'
 }
 navClose.addEventListener("click", closeNavMenu)
+
+
+
+// slider for mobile view
+
+$(document).ready(function(){
+    $('.slider-mobile').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // dots: true,
+        arrows : true
+    });
+  });
+
+  var mobileSlider = document.querySelector(".slider-mobile");
+  function slideDisplay(){
+    if(window.width < 768){
+        mobileSlider.style.display = 'block'
+    }
+  }

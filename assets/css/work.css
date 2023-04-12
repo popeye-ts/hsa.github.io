@@ -3,7 +3,7 @@
      background-repeat: no-repeat;
      background-size: cover;
      width: 100vw;
-     height: 160px;
+     height: 220px;
      /* opacity: 0.5; */
      position: relative;
  }
@@ -11,6 +11,7 @@
      position: absolute;
      content: "";
      width: 100vw;
+     height: 220px;
      background-color: #21264f;
      opacity: 0.8;
      z-index: 1;
@@ -19,7 +20,7 @@
  }
  .hero-heading{
      font-family: 'Lora', serif;
-     font-size: 4rem;
+     font-size: 3.5rem;
      width: 60%;
      margin: auto;
      text-align: left;
@@ -29,6 +30,7 @@
      position: absolute;
      left: 20%;
      overflow: hidden;
+     line-height: 4;
  }
  .work-intro-row{
     display: flex;

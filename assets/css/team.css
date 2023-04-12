@@ -41,17 +41,20 @@ body{
 }
 .team-card{
     width: 25rem;
-}
-.team-row{
-    display: grid;
-    grid-template-columns: auto auto;
-    /* justify-content: space-evenly; */
-    padding: 20px;
-    
-}
-.team-row{
     margin: auto;
-    width: 100%;
+    border-radius: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .team-row{
+        display: flex;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        padding: 70px;
+        width: 90%;    
+        margin: auto;
+    }
 }
 
 .card{
@@ -79,7 +82,7 @@ body{
         height: 130px;
     }
     .team-card{
-        width: 15rem;
+        width: 20rem;
         display: block;
     }
     .team-row{
@@ -92,6 +95,7 @@ body{
 
 @media screen and (max-width: 768px) {
     .team-card{
-        width: 18rem;
+        width: 21rem;
+        border-radius: 0px;
     }
 }

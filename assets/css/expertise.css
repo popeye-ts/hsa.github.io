@@ -53,6 +53,8 @@
 }
 .work{
     width: 100vw !important;
+    padding: 100px;
+    background-color: #e4e6ef;
 }
 
 
@@ -71,7 +73,7 @@
         height: 150px;
     }
     .card{
-        width: 14rem;
+        width: 23rem;
     }
     .hero-heading{
         font-size: 2rem;
@@ -79,10 +81,13 @@
         left: 0;
     }
     .bredcrumb-two{
-        top: 62%;
+        top: 50%;
     }
     .work-info{
         width: 100%;
+    }
+    .work-heading{
+        font-size: 2rem;
     }
 }
 
