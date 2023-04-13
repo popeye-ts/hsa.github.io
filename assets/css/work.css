@@ -60,7 +60,10 @@ a{
     justify-content: center;
     padding: 15px;
 }
-
+.work-heading{
+    text-align: left;
+    margin-left: 110px;
+}
 .know-more{
     padding: 60px;
     background-color: #e4e6ef;
@@ -89,5 +92,11 @@ a{
     }
     .know-more-col-div h2{
         font-size: 14px;
+    }
+    .work-row{
+        display: block;
+    }
+    .work-row .col{
+        width: 90%;
     }
  }

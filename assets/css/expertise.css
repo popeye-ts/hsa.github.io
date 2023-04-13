@@ -29,7 +29,7 @@
      padding: 50px;
      z-index: 100;
      position: absolute;
-     left: 20%;
+     /* left: 10%; */
      overflow: hidden;
  }
  .work-heading, .work-desc{
@@ -57,17 +57,21 @@
     background-color: #e4e6ef;
 }
 
-
-
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hsa-workers-row .col{
+    flex: 5 10 0;
+}
 
 
  @media (max-width:768px) {
     .expertise-new-row .col{
         width: 20rem;
     }
-    .slider-mobile div .col .card{
-        width: 16rem;
-    }
+   
     .hero-section{
         height: 150px;
         margin-bottom: 20px;
@@ -78,11 +82,14 @@
     .card{
         width: 23rem;
     }
-    .hero-heading{
+    .hsa-card{
+        width: 20rem;
+    }
+    /* .hero-heading{
         font-size: 2rem;
         width: 80%;
         left: 0;
-    }
+    } */
     .bredcrumb-two{
         top: 50%;
     }

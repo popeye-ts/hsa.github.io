@@ -120,8 +120,15 @@ p{
     background-color: transparent;
     border: none;
     font-size: 40px;
-    left: 350px;
+    right: 10px;
     position: absolute;
+}
+
+.footer{
+    width: 73%;
+}
+.footer-logo img{
+    width: 150px;
 }
 
 
