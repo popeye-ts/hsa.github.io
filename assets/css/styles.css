@@ -8,6 +8,8 @@ body{
 /****************
  GLOBAL STYLES
  ****************/
+
+ 
  .top-nav-container{
     display: flex;
     justify-content: space-between;
@@ -68,6 +70,12 @@ h1,h2,h3,h4,h5,h6{
 .nav-ul li a{
     font-weight: 400;
 }
+ul li a:hover{
+    text-decoration: underline;
+}
+.nav-link:hover{
+    text-decoration: none;
+}
 p{
     font-size: 13px;
     color: #1e1e1e;
@@ -75,14 +83,14 @@ p{
 .bredcrumb{
     position: absolute;
     z-index: 19;
-    bottom: 35%;
+    bottom: 40%;
     left: 19%;
 }
 .bredcrumb-two{
     position: absolute;
     z-index: 9;
     /* top: 56%; */
-    left: 25%;
+    left: 18%;
     /* background-color: black; */
 }
 .bredcrumb a{
@@ -130,14 +138,16 @@ p{
 .footer-logo img{
     width: 150px;
 }
+.hr{
+    opacity: 0.1;
+}
 
 
 
 
 
 
-
-@media (max-width:760px) {
+@media (max-width:768px) {
     p{
         font-size: 12px;
     }
@@ -151,13 +161,19 @@ p{
     .bredcrumb-two{
         position: absolute;
         z-index: 9;
-        top: 40%;
-        left: 25%;
+        top: 42%;
+        left: 8%;
         /* color: black; */
         /* background-color: black; */
     }
     .bredcrumb-two a{
         color: black;
+    }
+    .hero-heading{
+        left: 0;
+    }
+    .footer{
+        width: 100% !important;
     }
     
     

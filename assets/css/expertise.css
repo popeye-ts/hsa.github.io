@@ -32,8 +32,9 @@
      /* left: 10%; */
      overflow: hidden;
  }
- .work-heading, .work-desc{
+  .work-desc{
     color: black;
+    font-size: 14px;
  }
 .work-info{
     display: flex;
@@ -56,16 +57,61 @@
     padding: 100px;
     background-color: #e4e6ef;
 }
-
+.work-heading{
+    font-size: 2rem;
+    color: #21264f;
+}
 .page{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.expertise-team-section{
+    /* background-color: #ada9a4; */
+    color: black;
+}
+.expertise-work-section{
+    background-color:#e4e6ef;
+    padding: 70px 0px !important;
+}
+.expertise-team-heading , .expertise-team-desc{
+    color: black;
+}
+.expertise-team-heading{
+    text-align: center;
+}
+.expertise-team-desc{
+    line-height: 2;
+}
+.expertise-info{
+    display: flex;
+    justify-content: center;
+    /* display: block; */
+    width: 80%;
+    margin: auto;
+    padding: 40px 0px;
+}
+
 .hsa-workers-row .col{
     flex: 5 10 0;
 }
+.hsa-card{
+    width: 28rem;
+    border-radius: 0px;
+    border: 0px;
 
+}
+.hsa-card img{
+    border-radius: 0px;
+}
+@media screen and (max-width:1024px) {
+    .tablet-slide-col{
+        width: 100%;
+    }
+    /* .hsa-card{
+        width: 40rem !important;
+    } */
+}
 
  @media (max-width:768px) {
     .expertise-new-row .col{
@@ -79,11 +125,14 @@
     .hero-section::after{
         height: 150px;
     }
-    .card{
+    /* .card{
         width: 23rem;
-    }
+    } */
     .hsa-card{
-        width: 20rem;
+        width: 90%;
+    }
+    .slide{
+        width: 400px;
     }
     /* .hero-heading{
         font-size: 2rem;
@@ -98,6 +147,10 @@
     }
     .work-heading{
         font-size: 2rem;
+        color: #21264f;
+    }.tablet-slide-col{
+        width: 70%;
+        margin: auto;
     }
 }
 
@@ -124,4 +177,16 @@
     .bredcrumb-two{
         bottom: 240px;
     }
+    .expertise-info{
+        display: block;
+       }
+       .expertise-team-heading{
+        text-align: left;
+       }
 }
+ @media screen and (max-width: 425px) {
+    .bredcrumb-two{
+        top: 42%;
+        left: 13%;
+    }
+ }

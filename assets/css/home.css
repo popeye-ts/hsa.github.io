@@ -24,6 +24,7 @@ a:hover{
     margin-top: 50px;
     /* opacity: 0.5; */
     position: relative;
+    /* z-index: -1; */
 }
 .hero-section::after{
     position: absolute;
@@ -37,6 +38,20 @@ a:hover{
     left: 0;
     /* margin-top: 50px; */
 }
+.hr-lines{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 9;
+}
+.line-1{
+    width: 400px;
+    background-color: white;
+}
+.line-2{
+    width: 500px;
+    background-color: white;
+}
 .hero-heading{
     font-family: 'Lora', serif;
     font-size: 4rem;
@@ -48,6 +63,7 @@ a:hover{
     z-index: 100;
     position: absolute;
     left: 14%;
+    line-height: 1.5;
     /* margin-top: 50px; */
     /* overflow: hidden; */
 }
@@ -100,6 +116,7 @@ a:hover{
     display: flex;
     justify-content: center;
     background-color: #21264f;
+    padding:60px 0px !important;
 }
 .team-specialists-heading{
     color: white;
@@ -122,7 +139,44 @@ a:hover{
         font-size: 2.5rem;
     }
 }
-@media (min-width: 768px) {
+@media screen and (max-width:1024px) {
+    .hsa-workers{
+        display: none;
+    }
+    .team-img{
+        width: 90%;
+        margin: auto;
+    }
+    .team-specialists{
+        display: block;
+    }
+    .team-info{
+        margin: 20px 35px;
+    }
+    .card-desc{
+        height: 240px !important;
+    }
+    .card-desc .card-text{
+        line-height: 1.7;
+    }
+    .info-row{
+        display: block;
+        text-align: left;
+    }.info-heading{
+        text-align: left;
+    }
+    .hero-heading{
+        width: 90%;
+        left: 0;
+    }
+    .hsa-card{
+        width: 40rem;
+    }
+    .tablet-slide-col{
+        width: 100%;
+    }
+}
+@media (min-width: 1025px) {
     .slider-mobile {
       display: none;
     }
@@ -132,7 +186,7 @@ a:hover{
         width: 100vw;
     }
     h3{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .logo img{
         width: 70%;
@@ -140,12 +194,11 @@ a:hover{
     .hero-section{
         height: 200px;
     }
-    .hsa-workers{
-        display: none;
-    }
+   
     .hsa-card{
         width: 90%;
     }
+   
     .hero-section::after{
         height: 200px;
     }
@@ -159,6 +212,9 @@ a:hover{
         display: block;
         /* padding: 20px; */
     }
+    .team-img{
+        margin: auto;
+    }
     p{
         font-size: .875rem;
     }
@@ -167,6 +223,7 @@ a:hover{
         display: block;
         /* width: 14rem; */
         margin: auto;
+        padding: 30px 0px;
     }
     .info-heading{
         text-align: left;
@@ -177,7 +234,7 @@ a:hover{
         width: 50%;
     }
     .info{
-        padding: 15px 0px;
+        padding: 40px 0px;
         width: 90%;
     }
     /* .work{
@@ -187,7 +244,7 @@ a:hover{
         width: 100%;
         overflow: hidden;
         margin: 65px auto;
-        padding: 0px 15px;
+        padding: 0px 25px;
     }
     .hsa-workers-row{
         display: block;
@@ -195,17 +252,23 @@ a:hover{
     .team-info{
         width: 100% !important;
         /* margin-top: 15px; */
-        margin: 0;
+        margin: 20px 0px;
     }
     .team-img{
         width: 90%;
         /* margin: 15px 20px; */
     }
     .team-info h2{
-        font-size: 12px;
+        font-size: 2rem;
+        margin: auto;
+        display: block;
+        text-align: center;
     }
     .team-info a{
-        font-size: 8px;
+        font-size: 1rem;
+        /* text-align: center; */
+        margin-left: 54px;
+        
     }
     .hsa-card{
         height: 500px;

@@ -5,11 +5,26 @@ body{
 }
 .buttons{
     display: flex;
+    margin: 70px 0px !important;
 }
 .buttons button{
     border-radius: 0px;
     height: 50px;
     color: black;
+}
+.hero-heading{
+    font-family: 'Lora', serif;
+    font-size: 3.5rem;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    color: white;
+    padding: 50px;
+    z-index: 100;
+    position: absolute;
+    /* left: 15%; */
+    overflow: hidden;
+    line-height: 3;
 }
 
 .buttons button:hover{
@@ -31,7 +46,7 @@ body{
     background-color: transparent;
 }
 .track-col .card{
-    width: 13rem;
+    width: 15rem;
     background-color: transparent;
 }
 .tag{
@@ -48,19 +63,23 @@ body{
 
 @media screen and (max-width:425px) {
     .track-hero-section{
-        width: 90%;
+        width: 50%;
         /* background-color: yellow; */
     }
     .track-col .card{
-        width: 20rem;
+        width: 20rem !important;
         background-color: transparent;
     }
     .bredcrumb-two{
-        top: 67%;
+        top: 42% !important;
+        left: 10%;
     }
     .hero-heading{
-        font-size: 25px;
+        font-size: 25px !important;
         width: 100%;
+    }
+    .track-data .row{
+        margin: auto;
     }
 
 }
@@ -69,7 +88,17 @@ body{
         font-size: 40px;
     }
     .track-col .card{
-        /* width: 25rem; */
+        width: 40rem;
         background-color: transparent;
+    }
+    .track-data .row{
+        display: block;
+    }
+    .track-hero-section{
+        width: 90%;
+    }
+    .bredcrumb-two{
+        top: 61%;
+        left: 7%;
     }
 }

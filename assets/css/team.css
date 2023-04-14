@@ -32,7 +32,7 @@ body{
      /* padding: 50px; */
      z-index: 100;
      position: absolute;
-     left: 17%;
+     /* left: 17%; */
      overflow: hidden;
  }
 .team{
@@ -40,14 +40,17 @@ body{
     /* padding: ; */
 }
 .team-title{
-    width: 65%;
+    width: 70%;
 }
 .team-card{
     width: 25rem;
     margin: auto;
     border-radius: 0px;
 }
-
+.team-row{
+    width: 100%;
+    margin: auto;
+}
 @media  screen and (min-width: 768px) {
     .team-card{
         width: 21rem;
@@ -68,18 +71,27 @@ body{
         /* display: flex; */
         /* grid-template-columns: auto auto; */
         justify-content: space-between;
-        padding: 70px 10px;
-        width: 90%;    
+        /* padding: 70px 10px; */
+        /* width: 90%;     */
         margin: auto;
+        display: block;
     }
     .team-card{
-        width: 17rem;
+        width: 40rem !important;
+    }
+    .team-title h2 br{
+        display: none;
+    }
+    .team-title h2{
+        text-align: left;
+        font-size: 2rem;
+        width: 100%;
     }
 }
 
 .card{
     border: none;
-    /* width: 28rem; */
+    width: 25rem;
 }
 .card:hover{
     border-bottom: 4px solid #1e1e1e;
@@ -88,7 +100,15 @@ body{
 /* ul li a:hover{
     /* text-decoration: underline ; */
 /* } */ 
-
+@media screen and (max-width:425px) {
+    .team-title h2{
+        font-size: 1.5rem;
+    }
+    .bredcrumb-two{
+        top: 35%;
+        left: 50px;
+    }
+}
 
 @media screen and (max-width: 425px) {
     .hero-heading{
@@ -102,11 +122,12 @@ body{
         height: 130px;
     }
     .team-card{
-        width: 20rem;
+        width: 22rem !important;
         display: block;
     }
     .team-row{
         display: block;
+        width: 100%;
     }
     .footer .row{
        display: block;
