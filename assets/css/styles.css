@@ -43,9 +43,27 @@ ul li a{
     margin: 0px 8px;
     color: black;
     font-weight: 600 !important;
+    position: relative;
  }
- .nav-link:hover{
+ /* .nav-link:hover{
     border-bottom: 2px solid gray;
+ } */
+ .nav-menu-link::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: #21264f;
+    top: 30px;
+    left: 10%;
+    z-index: 222;
+    display: none;
+
+ }
+ .nav-menu-link:hover::after{
+    display: block;
+    /* transform: scaleX(1);
+    transform-origin: left; */
  }
  .nav-contact{
     font-size: 12px;

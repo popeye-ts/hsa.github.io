@@ -30,9 +30,15 @@ $(document).ready(function(){
     });
   });
 
-//   var mobileSlider = document.querySelector(".slider-mobile");
-//   function slideDisplay(){
-//     if(window.width < 768){
-//         mobileSlider.style.display = 'block'
-//     }
-//   }
+// login form 
+var loginForm = document.querySelector(".log-in-form");
+var loginButton = document.querySelector(".nav-login");
+var formClose = document.querySelector(".form-close");
+
+loginButton.addEventListener('click', function(){
+    loginForm.style.display = 'flex' , 'important';
+});
+
+formClose.addEventListener('click', function(){
+    loginForm.style.display = 'none' , 'important'
+})
