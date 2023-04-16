@@ -189,4 +189,11 @@
         top: 42%;
         left: 13%;
     }
+    .hero-heading{
+        width: 100%;
+    }
+    .hsa-card{
+        width: 20rem;
+        height: 530px;
+    }
  }
