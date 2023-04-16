@@ -2,17 +2,21 @@ body{
     width: 100%;
     box-sizing: border-box;
     position: relative;
+  
 }
 
 /****************
  GLOBAL STYLES
  ****************/
+
+ 
  .top-nav-container{
     display: flex;
     justify-content: space-between;
-    position: static;
+    /* position: static; */
+    position: fixed;
     background-color: #fff;
-    position: sticky;
+    /* position: sticky; */
     /* margin-bottom: 30px; */
     z-index: 111;
     top: 0;
@@ -26,7 +30,10 @@ body{
 }
 .nav-ul{
     height: 30px;
-    line-height: 3px;
+    line-height: 20px;
+}
+p, a, li{
+    font-family: 'Source Sans Pro', sans-serif;
 }
 ul li a{
     font-size: 13px;
@@ -35,12 +42,39 @@ ul li a{
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px 8px;
     color: black;
+    font-weight: 600 !important;
+    position: relative;
  }
- .nav-link:hover{
+ /* .nav-link:hover{
     border-bottom: 2px solid gray;
+ } */
+ .nav-menu-link::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #21264f;
+    top: 35px;
+    left: 5%;
+    z-index: 222;
+    /* display: none; */
+
+ }
+ .nav-menu-link:hover::after{
+    /* display: block; */
+    width: 90%;
+    transform: scaleX(1); 
+    transform-origin: left;
+    transition: 0.2s ease;
  }
  .nav-contact{
     font-size: 12px;
+ }
+ .navBar{
+    line-height: 35px;
+ }
+ .my-nav{
+     display: flex;
  }
 a{
     text-decoration: none;
@@ -51,29 +85,43 @@ li{
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lora', serif;
+    color: #21264f;
+}
+.logo{
+    width: 9rem;
+}
+.nav-ul li a{
+    font-weight: 400;
+}
+ul li a:hover{
+    text-decoration: underline;
+}
+.nav-link:hover{
+    text-decoration: none;
 }
 p{
     font-size: 13px;
+    color: #1e1e1e;
 }
 .bredcrumb{
     position: absolute;
     z-index: 19;
-    bottom: -10%;
-    left: 25%;
+    bottom: 40%;
+    left: 19%;
 }
 .bredcrumb-two{
     position: absolute;
     z-index: 9;
     /* top: 56%; */
-    left: 25%;
+    left: 18%;
     /* background-color: black; */
 }
 .bredcrumb a{
     font-size: 15px;
-    color: #ada9a4;
+    color: #fff;
 }
 .bredcrumb-two a{
-    color: #ada9a4;
+    color: #000000;
     font-size: 12px;
     
 }
@@ -103,8 +151,18 @@ p{
     background-color: transparent;
     border: none;
     font-size: 40px;
-    left: 350px;
+    right: 10px;
     position: absolute;
+}
+
+.footer{
+    width: 73%;
+}
+.footer-logo img{
+    width: 150px;
+}
+.hr{
+    opacity: 0.1;
 }
 
 
@@ -112,8 +170,7 @@ p{
 
 
 
-
-@media (max-width:760px) {
+@media (max-width:768px) {
     p{
         font-size: 12px;
     }
@@ -121,9 +178,27 @@ p{
         text-align: right;
         margin-top: 25x px;
     }
-    .bredcrumb, .bredcrumb-two{
+    .bredcrumb{
         bottom: -10%;
     }
+    .bredcrumb-two{
+        position: absolute;
+        z-index: 9;
+        top: 42%;
+        left: 8%;
+        /* color: black; */
+        /* background-color: black; */
+    }
+    .bredcrumb-two a{
+        color: black;
+    }
+    .hero-heading{
+        left: 0;
+    }
+    .footer{
+        width: 100% !important;
+    }
+    
     
 }
 

@@ -1,0 +1,104 @@
+body{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.buttons{
+    display: flex;
+    margin: 70px 0px !important;
+}
+.buttons button{
+    border-radius: 0px;
+    height: 50px;
+    color: black;
+}
+.hero-heading{
+    font-family: 'Lora', serif;
+    font-size: 3.5rem;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    color: white;
+    padding: 50px;
+    z-index: 100;
+    position: absolute;
+    /* left: 15%; */
+    overflow: hidden;
+    line-height: 3;
+}
+
+.buttons button:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.track-hero-section{
+    width: 60%;
+    /* background-color: yellow; */
+}
+.track-col .card{
+    border-radius: 0px;
+    position: relative;
+}
+.track-col .card img{
+    width: 100px;
+    margin: auto;
+    background-color: transparent;
+}
+.track-col .card{
+    width: 15rem;
+    background-color: transparent;
+}
+.tag{
+    background-color: rgb(212, 212, 212);
+    width: 35px;
+    line-height: 20px;
+    height: 32px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding:     5px;
+    font-size: 11px;
+}
+
+@media screen and (max-width:425px) {
+    .track-hero-section{
+        width: 50%;
+        /* background-color: yellow; */
+    }
+    .track-col .card{
+        width: 20rem !important;
+        background-color: transparent;
+    }
+    .bredcrumb-two{
+        top: 42% !important;
+        left: 10%;
+    }
+    .hero-heading{
+        font-size: 25px !important;
+        width: 100%;
+    }
+    .track-data .row{
+        margin: auto;
+    }
+
+}
+@media (max-width:768px) {
+    .hero-heading{
+        font-size: 40px;
+    }
+    .track-col .card{
+        width: 40rem;
+        background-color: transparent;
+    }
+    .track-data .row{
+        display: block;
+    }
+    .track-hero-section{
+        width: 90%;
+    }
+    .bredcrumb-two{
+        top: 61%;
+        left: 7%;
+    }
+}

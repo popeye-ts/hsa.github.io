@@ -3,7 +3,7 @@
      background-repeat: no-repeat;
      background-size: cover;
      width: 100vw;
-     height: 160px;
+     height: 220px;
      /* opacity: 0.5; */
      position: relative;
  }
@@ -11,6 +11,7 @@
      position: absolute;
      content: "";
      width: 100vw;
+     height: 220px;
      background-color: #21264f;
      opacity: 0.8;
      z-index: 1;
@@ -19,7 +20,7 @@
  }
  .hero-heading{
      font-family: 'Lora', serif;
-     font-size: 4rem;
+     font-size: 3.5rem;
      width: 60%;
      margin: auto;
      text-align: left;
@@ -27,11 +28,13 @@
      padding: 50px;
      z-index: 100;
      position: absolute;
-     left: 20%;
+     left: 13%;
      overflow: hidden;
+     line-height: 4;
  }
  .work-intro-row{
     display: flex;
+    padding: 70px 0px;
  }
 a{
     text-decoration: none;
@@ -56,24 +59,40 @@ a{
 .work-row{
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 78px 15px;
 }
-
+.work-row .col{
+    background-color: #fff;
+}
+.work-row .col ul li{
+    padding: 3px 0px;
+}
+.work-heading{
+    text-align: left;
+    margin-left: 110px;
+}
 .know-more{
     padding: 60px;
     background-color: #e4e6ef;
 }
+.know-more .row{
+    padding: 30px 10px !important;
+}
 .know-more-col-div{
-    margin: auto;
+    margin: auto !important;
     text-align: center;
     
 }
 
 
+@media screen and (max-width:425px) {
+    .work-intro-row{
+        display: block;
+    }
+}
 
 
-
- @media (max-width:760px) {
+ @media (max-width:768px) {
     .hero-section{
         height: 150px;
     }
@@ -86,6 +105,29 @@ a{
         left: 0;
     }
     .know-more-col-div h2{
-        font-size: 14px;
+        font-size: 2rem;
+    }
+    .know-more-col-div p{
+        font-size: 0.875rem;
+    }
+    .work-row{
+        display: block;
+    }
+    .work-row .col{
+        width: 90%;
+    }
+    .work-heading{
+        margin-left: 0px;
+    }
+    .know-more{
+        padding: 30px;
+    }
+    .know-more .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .know-more .row .col{
+        width: 100%;
+        text-align: left;
     }
  }

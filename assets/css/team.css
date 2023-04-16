@@ -1,4 +1,6 @@
-
+body{
+    width: 100vw;
+}
 
 .hero-section{
     background-image: url('../images/banner.jpg');
@@ -22,31 +24,74 @@
  }
  .hero-heading{
      font-family: 'Lora', serif;
-     font-size: 4rem;
+     font-size: 3.5rem;
      width: 60%;
      margin: auto;
      text-align: left;
      color: white;
-     padding: 50px;
+     /* padding: 50px; */
      z-index: 100;
      position: absolute;
-     left: 20%;
+     /* left: 17%; */
      overflow: hidden;
  }
 .team{
     background-color: #e4e6ef;
+    /* padding: ; */
 }
-.team-members{
-    display: flex;
-    justify-content: space-evenly;
-    
+.team-title{
+    width: 70%;
+}
+.team-card{
+    width: 25rem;
+    margin: auto;
+    border-radius: 0px;
 }
 .team-row{
+    width: 100%;
     margin: auto;
+}
+@media  screen and (min-width: 768px) {
+    .team-card{
+        width: 21rem;
+    }
+    .team-row{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        padding: 70px 10px;
+        width: 90%;    
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .team-row{
+        /* display: flex; */
+        /* grid-template-columns: auto auto; */
+        justify-content: space-between;
+        /* padding: 70px 10px; */
+        /* width: 90%;     */
+        margin: auto;
+        display: block;
+    }
+    .team-card{
+        width: 40rem !important;
+    }
+    .team-title h2 br{
+        display: none;
+    }
+    .team-title h2{
+        text-align: left;
+        font-size: 2rem;
+        width: 100%;
+    }
 }
 
 .card{
     border: none;
+    width: 25rem;
 }
 .card:hover{
     border-bottom: 4px solid #1e1e1e;
@@ -55,23 +100,37 @@
 /* ul li a:hover{
     /* text-decoration: underline ; */
 /* } */ 
-
-
-
-@media (max-width:760px) {
-    .hero-section{
-        height: 250px;
+@media screen and (max-width:425px) {
+    .team-title h2{
+        font-size: 1.5rem;
     }
-    .hero-section::after{
-        height: 250px;
+    .bredcrumb-two{
+        top: 35%;
+        left: 50px;
     }
+}
+
+@media screen and (max-width: 425px) {
     .hero-heading{
         font-size: 2rem;
-        width: 80%;
         left: 0;
+    }
+    .hero-section{
+        height: 130px;
+    }
+    .hero-section::after{
+        height: 130px;
+    }
+    .team-card{
+        width: 22rem !important;
+        display: block;
+    }
+    .team-row{
+        display: block;
+        width: 100%;
+    }
+    .footer .row{
+       display: block;
     }
 }
 
-@media (min-width:700px) {
-
-}
