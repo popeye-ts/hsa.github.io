@@ -35,6 +35,9 @@ body{
 p, a, li{
     font-family: 'Source Sans Pro', sans-serif;
 }
+p, a, li{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 ul li a{
     font-size: 13px;
 }
